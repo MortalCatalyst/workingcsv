@@ -1,4 +1,4 @@
-vimrc for python, nimrod and web development.
+vimrc for python, nimrod, perl and web development.
 
 uses VAM for plugin managment.
 
