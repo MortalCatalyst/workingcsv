@@ -35,9 +35,11 @@ VAMActivate The_NERD_tree
 VAMActivate The_NERD_Commenter
 VAMActivate Emmet
 VAMActivate UltiSnips
-VAMACtivate UnconditionalPaste
+VAMActivate UnconditionalPaste
 VAMActivate Gundo
 VAMActivate vim-snippets
+VAMActivate jinja
+
 
 colorscheme seoul256
 set number
@@ -67,6 +69,7 @@ autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType c set omnifunc=ccomplete#Complete
 autocmd FileType ruby set omnifunc=rubycomplete#Complete
+au BufNewFile,BufRead *.html,*.htm,*.shtml,*.stm set ft=jinja
 
 let user_emmet_expandabbr_key = '<c-e>'
 let g:pymode = 1
