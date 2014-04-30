@@ -20,7 +20,7 @@ these are the plugins used.
 
 * mojo
 
-* snipmate
+* Ultisnips with honza/vim-snippets 
 
 * nimrod
 
@@ -38,4 +38,5 @@ these are the plugins used.
 
 * Emmet
 
+* Unconditional Paste
 This is kept a lot simpler than my preivious .vimrc's
