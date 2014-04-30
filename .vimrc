@@ -25,7 +25,7 @@ VAMActivate HTML_AutoCloseTag
 VAMActivate css3
 VAMActivate css_color
 VAMActivate mojo
-VAMActivate snipmate
+" VAMActivate snipmate
 VAMActivate nimrod
 VAMActivate Python-mode-klen
 VAMActivate delimitMate 
@@ -34,6 +34,10 @@ VAMActivate seoul256
 VAMActivate The_NERD_tree
 VAMActivate The_NERD_Commenter
 VAMActivate Emmet
+VAMActivate UltiSnips
+VAMACtivate UnconditionalPaste
+VAMActivate Gundo
+VAMActivate vim-snippets
 
 colorscheme seoul256
 set number
@@ -51,6 +55,10 @@ set wildmode=list:longest,full
 " plugin commands
 filetype plugin on
 " filetype-indent-on
+nnoremap <F5> :GundoToggle<CR>
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
