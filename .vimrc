@@ -22,7 +22,7 @@ VAMActivate perl
 VAMActivate perlomni
 VAMActivate vim-airline
 VAMActivate HTML_AutoCloseTag
-VAMActivate css3
+" VAMActivate css3
 VAMActivate css_color
 VAMActivate mojo
 " VAMActivate snipmate
@@ -39,7 +39,8 @@ VAMActivate UnconditionalPaste
 VAMActivate Gundo
 VAMActivate vim-snippets
 VAMActivate jinja
-
+VAMActivate vim-autopep8
+VAMActivate vim-ipython
 
 colorscheme seoul256
 set number
@@ -57,7 +58,7 @@ set wildmode=list:longest,full
 " plugin commands
 filetype plugin on
 " filetype-indent-on
-nnoremap <F5> :GundoToggle<CR>
+nnoremap <F6> :GundoToggle<CR>
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
@@ -69,7 +70,7 @@ autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType c set omnifunc=ccomplete#Complete
 autocmd FileType ruby set omnifunc=rubycomplete#Complete
-au BufNewFile,BufRead *.html,*.htm,*.shtml,*.stm set ft=jinja
+" au BufNewFile,BufRead *.html,*.htm,*.shtml,*.stm set ft=jinja
 
 let user_emmet_expandabbr_key = '<c-e>'
 let g:pymode = 1
