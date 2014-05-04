@@ -40,7 +40,7 @@ VAMActivate Gundo
 VAMActivate vim-snippets
 VAMActivate jinja
 VAMActivate vim-autopep8
-VAMActivate vim-ipython
+" VAMActivate vim-ipython
 
 colorscheme seoul256
 set number
