@@ -41,6 +41,9 @@ VAMActivate vim-snippets
 VAMActivate jinja
 VAMActivate vim-autopep8
 " VAMActivate vim-ipython
+VAMActivate EasyMotion
+VAMActivate surround
+
 
 colorscheme seoul256
 set number
