@@ -19,7 +19,9 @@ endfun
 call SetupVAM()
 VAMActivate matchit.zip vim-addon-commenting
 VAMActivate perl
+VAMActivate vim-django
 VAMActivate perlomni
+VAMActivate mojo
 VAMActivate vim-airline
 VAMActivate HTML_AutoCloseTag
 " VAMActivate css3
