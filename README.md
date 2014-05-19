@@ -39,4 +39,10 @@ these are the plugins used.
 * Emmet
 
 * Unconditional Paste
+
+* EasyMotion
+
+* Ruby(vim-ruby)
+
+* Rails rails.vim
 This is kept a lot simpler than my preivious .vimrc's

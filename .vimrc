@@ -19,7 +19,10 @@ endfun
 call SetupVAM()
 VAMActivate matchit.zip vim-addon-commenting
 VAMActivate perl
-VAMActivate vim-django
+" VAMActivate vim-django
+VAMActivate vim-ruby
+VAMActivate rails
+VAMActivate Rubytest
 VAMActivate perlomni
 VAMActivate mojo
 VAMActivate vim-airline
