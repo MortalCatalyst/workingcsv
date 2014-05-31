@@ -8,8 +8,6 @@ these are the plugins used.
 
 * perl
 
-* perlomni
-
 * vim-airline
 
 * HTML_AutoCloseTag
@@ -17,8 +15,6 @@ these are the plugins used.
 * css3
 
 * css_color
-
-* mojo
 
 * Ultisnips with honza/vim-snippets 
 
@@ -37,10 +33,6 @@ these are the plugins used.
 * The_NERD_Commenter
 
 * Emmet
-
-* Unconditional Paste
-
-* EasyMotion
 
 * Ruby(vim-ruby)
 
