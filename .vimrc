@@ -22,14 +22,14 @@ VAMActivate perl
 " VAMActivate vim-django
 VAMActivate vim-ruby
 VAMActivate rails
-VAMActivate Rubytest
-VAMActivate perlomni
-VAMActivate mojo
+" VAMActivate Rubytest
+" VAMActivate perlomni
+" VAMActivate mojo
 VAMActivate vim-airline
 VAMActivate HTML_AutoCloseTag
 " VAMActivate css3
 VAMActivate css_color
-VAMActivate mojo
+" VAMActivate mojo
 " VAMActivate snipmate
 VAMActivate nimrod
 VAMActivate Python-mode-klen
@@ -40,7 +40,7 @@ VAMActivate The_NERD_tree
 VAMActivate The_NERD_Commenter
 VAMActivate Emmet
 VAMActivate UltiSnips
-VAMActivate UnconditionalPaste
+" VAMActivate UnconditionalPaste
 VAMActivate Gundo
 VAMActivate vim-snippets
 VAMActivate jinja
@@ -62,6 +62,12 @@ inoremap <C-Space> <C-x><C-o>
 inoremap <C-@> <C-Space>
 set wildmenu
 set wildmode=list:longest,full
+
+vmap <C-c> "py
+nmap <C-c> "pyiw
+vmap <C-p> "pp
+nmap <C-p> "pP
+imap <C-p> <Esc>"ppa"
 
 " plugin commands
 filetype plugin on
@@ -90,8 +96,8 @@ let g:NERDTreeWinPos = "right"
 
 " nnoremap <F5> :GundoToggle<CR>
 
-let mojo_disable_html = 1
-let mojo_highlight_data = 1
+"let mojo_disable_html = 1
+"let mojo_highlight_data = 1
 "filetype = perl
 
 fun! JumpToDef()
