@@ -8,6 +8,15 @@ EasyMotion word command updated to avoid conflict
 Added ruby_runner 
 \r
 
+NERDTreeToggle ,m
+NERDTreeFind ,n
+
+" Move between screens http://robots.thoughtbot.com/post/48275867281/vim-splits-move-faster-and-more-naturally
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>"
+
 #todo
 Add https://github.com/astashov/vim-ruby-debugger
 
