@@ -37,7 +37,7 @@ VAMActivate delimitMate
 VAMActivate Zenburn
 VAMActivate seoul256
 VAMActivate The_NERD_tree
-VAMActivate The_NERD_Commenter
+" VAMActivate The_NERD_Commenter
 VAMActivate Emmet
 VAMActivate UltiSnips
 " VAMActivate UnconditionalPaste
@@ -48,7 +48,7 @@ VAMActivate vim-autopep8
 " VAMActivate vim-ipython
 VAMActivate EasyMotion
 VAMActivate surround
-
+" VAMActivate vim-ruby-runner
 
 colorscheme seoul256
 set number
@@ -68,6 +68,9 @@ nmap <C-c> "pyiw
 vmap <C-p> "pp
 nmap <C-p> "pP
 imap <C-p> <Esc>"ppa"
+
+map <Space>c <Plug>(easymotion-w)
+"map <leader>r :!ruby %<cr>
 
 " plugin commands
 filetype plugin on

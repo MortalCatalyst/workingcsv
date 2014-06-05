@@ -2,6 +2,12 @@ vimrc for Ruby, Rails, Python, Nimrod, Perl and web development.
 
 uses VAM for plugin managment.
 
+EasyMotion word command updated to avoid conflict 
+<space>c 
+
+Added ruby_runner as plugin as currently unavailable in VAM.
+\r 
+
 these are the plugins used.
 
 * matchit.zip vim-addon-commenting
