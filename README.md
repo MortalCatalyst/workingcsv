@@ -5,8 +5,11 @@ uses VAM for plugin managment.
 EasyMotion word command updated to avoid conflict 
 <space>c 
 
-Added ruby_runner as plugin as currently unavailable in VAM.
-\r 
+Added ruby_runner 
+\r
+
+#todo
+Add https://github.com/astashov/vim-ruby-debugger
 
 these are the plugins used.
 
