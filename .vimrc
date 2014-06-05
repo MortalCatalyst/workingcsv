@@ -49,6 +49,7 @@ VAMActivate vim-autopep8
 VAMActivate EasyMotion
 VAMActivate surround
 " VAMActivate vim-ruby-runner
+VAMActivate github:henrik/vim-ruby-runner
 
 colorscheme seoul256
 set number
