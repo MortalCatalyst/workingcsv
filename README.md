@@ -23,6 +23,8 @@ nnoremap <C-H> <C-W><C-H>"
 Add https://github.com/astashov/vim-ruby-debugger
 
 these are the plugins used.
+* Added Notes (https://github.com/xolox/vim-notes)
+default directory ~/Documents/Notes
 
 * matchit.zip vim-addon-commenting
 

@@ -48,7 +48,8 @@ VAMActivate vim-autopep8
 " VAMActivate vim-ipython
 VAMActivate EasyMotion
 VAMActivate surround
-" VAMActivate vim-ruby-runner
+VAMActivate notes
+VAMActivate genutils
 VAMActivate github:henrik/vim-ruby-runner
 
 colorscheme seoul256
@@ -63,6 +64,10 @@ inoremap <C-Space> <C-x><C-o>
 inoremap <C-@> <C-Space>
 set wildmenu
 set wildmode=list:longest,full
+
+"Notes
+"let g:notesRoot = '~/Documents/Notes'
+let g:notes_directories = ['~/Documents/Notes']
 
 vmap <C-c> "py
 nmap <C-c> "pyiw
