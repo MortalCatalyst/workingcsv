@@ -73,10 +73,15 @@ imap <C-p> <Esc>"ppa"
 map <Space>c <Plug>(easymotion-w)
 "map <leader>r :!ruby %<cr>
 
+"add in end and jump into do, while, if etc on SHIFT + ENTER(not working)
+" imap <S-CR>    <CR><CR>end<Esc>-cc
+
+
 " plugin commands
 filetype plugin on
 " filetype-indent-on
 nnoremap <F6> :GundoToggle<CR>
+
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
@@ -88,7 +93,15 @@ autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType c set omnifunc=ccomplete#Complete
 autocmd FileType ruby set omnifunc=rubycomplete#Complete
+autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1 
+autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
+autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
 " au BufNewFile,BufRead *.html,*.htm,*.shtml,*.stm set ft=jinja
+
+"Cycle buffers <F2> and <F3>
+map <F2> :bprevious<CR>
+map <F3> :bnext<CR>
+
 
 let user_emmet_expandabbr_key = '<c-e>'
 let g:pymode = 1

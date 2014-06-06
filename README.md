@@ -17,6 +17,8 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>"
 
+<F2> and <F3> to toggle previous and next buffers
+
 #todo
 Add https://github.com/astashov/vim-ruby-debugger
 
