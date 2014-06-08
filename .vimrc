@@ -103,6 +103,9 @@ autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
 " au BufNewFile,BufRead *.html,*.htm,*.shtml,*.stm set ft=jinja
 
+autocmd Filetype html setlocal ts=2 sts=2 sw=2
+autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
+
 "Cycle buffers <F2> and <F3>
 map <F2> :bprevious<CR>
 map <F3> :bnext<CR>
