@@ -51,6 +51,9 @@ VAMActivate surround
 VAMActivate notes
 VAMActivate genutils
 VAMActivate github:henrik/vim-ruby-runner
+VAMActivate Supertab
+VAMActivate Syntastic
+VAMActivate Vdebug
 
 colorscheme seoul256
 set number
@@ -144,3 +147,6 @@ endf
 nn <M-g> :call JumpToDef()<cr>
 ino <M-g> <esc>:call JumpToDef()<cr>i
 
+"Stop delays in resolving ruby/jruby
+let g:ruby_path=system('which --skip-tilde ruby')
+" let g:syntastic_quiet_messages = 1
