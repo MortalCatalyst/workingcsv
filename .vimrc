@@ -45,7 +45,7 @@ VAMActivate Gundo
 VAMActivate vim-snippets
 VAMActivate jinja
 VAMActivate vim-autopep8
-" VAMActivate vim-ipython
+VAMActivate vim-ipython
 VAMActivate EasyMotion
 VAMActivate surround
 VAMActivate notes
@@ -53,9 +53,14 @@ VAMActivate genutils
 VAMActivate github:henrik/vim-ruby-runner
 VAMActivate Supertab
 VAMActivate Syntastic
-VAMActivate Vdebug
+" VAMActivate Vdebug
+VAMActivate calmar256-lightdark
 
-colorscheme seoul256
+set t_Co=256
+colorscheme seoul256 
+
+nnoremap <silent> <space>d :exec 'colorscheme' (g:colors_name ==# 'seoul256') ? 'calmar256-light' : 'seoul256'<CR>
+
 set number
 set foldmethod=indent
 set foldlevel=99
@@ -68,15 +73,16 @@ inoremap <C-@> <C-Space>
 set wildmenu
 set wildmode=list:longest,full
 
+nmap p :dd+pu[t]<CR>
 "Notes
 "let g:notesRoot = '~/Documents/Notes'
 let g:notes_directories = ['~/Documents/Notes']
 
-vmap <C-c> "py
-nmap <C-c> "pyiw
-vmap <C-p> "pp
-nmap <C-p> "pP
-imap <C-p> <Esc>"ppa"
+" vmap <C-c> "py
+" nmap <C-c> "pyiw
+" vmap <C-p> "pp
+" nmap <C-p> "pP
+" imap <C-p> <Esc>"ppa"
 
 map <Space>c <Plug>(easymotion-w)
 "map <leader>r :!ruby %<cr>
@@ -115,11 +121,16 @@ map <F3> :bnext<CR>
 
 
 let user_emmet_expandabbr_key = '<c-e>'
+" Pymode
 let g:pymode = 1
 let g:pymode_trim_whitespaces = 1
 let g:pymode_options = 1
+let g:pymode_quickfix_minheight = 3
+let g:pymode_quickfix_maxheight = 6
+let g:pymode_python = 'python3'
 
 " map <leader>n :NERDTreeToggle<CR>
+" de_python = 'python'
 let g:NERDTreeWinPos = "right"
 nmap ,n :NERDTreeFind<CR>
 nmap ,m :NERDTreeToggle<CR>
