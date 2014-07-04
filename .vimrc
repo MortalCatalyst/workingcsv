@@ -55,6 +55,7 @@ VAMActivate Supertab
 VAMActivate Syntastic
 " VAMActivate Vdebug
 VAMActivate calmar256-lightdark
+VAMActivate github:jmcomets/vim-pony
 
 set t_Co=256
 colorscheme seoul256 
@@ -73,7 +74,6 @@ inoremap <C-@> <C-Space>
 set wildmenu
 set wildmode=list:longest,full
 
-nmap p :dd+pu[t]<CR>
 "Notes
 "let g:notesRoot = '~/Documents/Notes'
 let g:notes_directories = ['~/Documents/Notes']
@@ -123,12 +123,11 @@ map <F3> :bnext<CR>
 let user_emmet_expandabbr_key = '<c-e>'
 " Pymode
 let g:pymode = 1
-let g:pymode_trim_whitespaces = 1
-let g:pymode_options = 1
-let g:pymode_quickfix_minheight = 3
-let g:pymode_quickfix_maxheight = 6
-let g:pymode_python = 'python3'
-
+" let g:pymode_trim_whitespaces = 1
+" let g:pymode_options = 1
+" let g:pymode_quickfix_minheight = 3
+" let g:pymode_quickfix_maxheight = 6
+" let g:pymode_python = 'python3'
 " map <leader>n :NERDTreeToggle<CR>
 " de_python = 'python'
 let g:NERDTreeWinPos = "right"
