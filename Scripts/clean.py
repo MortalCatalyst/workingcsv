@@ -51,11 +51,11 @@ def race_table(text_file):
             b_rating = record[15]
             sex = record[16]
             print(name, wins, seconds)
-            output_table.append((meeting, date, rail, weather, track, distance,
-                                 benchmark, race, number, name, sex, b_rating,
-                                 weight, barrier, starts, wins, seconds,
-                                 thirds, prizemoney, trainer, location, jockey
-                                 ))
+            output_table.append(
+                (meeting, date, rail, weather, track, distance,
+                 benchmark, race, number, name, sex, b_rating,
+                 weight, barrier, starts, wins, seconds,
+                 thirds, prizemoney, trainer, location, jockey))
     return output_table
 
 MY_FILE = out_file_name(FILENAME)
@@ -64,7 +64,8 @@ MY_FILE = out_file_name(FILENAME)
 #     for line in race_table(f_in.readline()):
 #         new_row = line
 with open(FILENAME, 'r') as f_in, open(MY_FILE, 'w') as f_out:
-    CONTENT = csv.reader(f_in)
+    lines = filter(None, (line.rstrip() for line in f_in))
+    CONTENT = csv.reader(row for row in lines if not row.startswith('<!--'))
     # print(content)
     FILE_CONTENTS = race_table(CONTENT)
     # print new_name
